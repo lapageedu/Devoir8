@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page privée</title>
+</head>
+<body>
+
+<h1>🔒 Zone privée</h1>
+<p>Accès réservé aux utilisateurs connectés.</p>
+
+<button onclick="netlifyIdentity.logout()">Se déconnecter</button>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (!netlifyIdentity.currentUser()) {
+    window.location.href = "/";
+  }
+</script>
+</body>
+</html>

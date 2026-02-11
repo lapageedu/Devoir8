@@ -4,12 +4,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Responsivite</title>
+		<title>Responsivité</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	
-	<body>
+	<body>	
 	<header class="header">
 		<div class="zonenav">
 		<img class="logo" src="bible.jpg" alt="logo">
@@ -26,8 +26,8 @@
 	
 	 <h1>Devoir de Jean Eddy Pagenel</h1>
 	<main class="main">
-	    <h2>Rendre un site responsive</h2>
-		<h3> Cours 9: CSS</h3>
+	    <h2>Display Box</h2>
+		<h3> Cours 6: CSS</h3>
 		
 		
         <div class="eddy">
@@ -61,8 +61,9 @@
 				</div>
 			</div>	
 		</div>
-			
-		<h1>Devwa  pa m nan sou <stron>Responsivite :</strong> 3 fevriye 2026</h1>
+		</main>
+			<main class="main">
+		<h1>Devwa  pa m nan sou <stron>Display grid :</strong> 3 fevriye 2026</h1>
 		
 		<div class="container">
 		
@@ -95,12 +96,8 @@
 		<a href="#">Actes</a>
 		<img class="image" src="bible.jpg" alt="la bible"></img>
 		</div>
-		        	
-	</main>
-	
-	
-	
-	
+		 </main>       	
+
 		<footer class="footer">
 		<h1>Devwa  pa m nan sou <stron>Pye paj :</strong> 6 fevriye 2026</h1>
 		<div class="content">
@@ -149,19 +146,36 @@
   <a  href="https://youtube.com" target="_blank">
     <i class="fab fa-youtube"></i>
   </a>
-	
-	<a  href="https://instagram.com" target="_blank">
+  
+   <a  href="https://x.com" target="_blank">
+    <i class="fab fa-x"></i>
+  </a>
+  
+   <a  href="https://instagram" target="_blank">
     <i class="fab fa-instagram"></i>
   </a>
-  
-  <a  href="https://X.com" target="_blank">
-    <i class="fab fa-X"></i>
-  </a>
-  
-  <a class="what" href="https://wa.me/50900000000" target="_blank">
+
+  <a class="what" href="https://wa.me/50938146245" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 </div>
+
+<button onclick="netlifyIdentity.open()">Se connecter</button>
+<button onclick="netlifyIdentity.logout()">Se déconnecter</button>
 </footer>
+
+<script
+src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!--  <script>
+  netlifyIdentity.on('login', user => {
+    window.location.href = "/private.html";
+  });
+
+  netlifyIdentity.on('logout', () => {
+    window.location.href = "/";
+  });
+</script> -->
+
  </body>
 	</html>
+
