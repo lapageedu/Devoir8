@@ -13,6 +13,9 @@
 	background:white;
 	display:flex;
 	justify-content:space-between;
+	align-items:center;
+	padding:10px;
+	border-radius:10px;
 }
 .logo{
 	width:50px;
@@ -60,11 +63,12 @@
 
 
 .main{
-	max-width:px;
-	margin:auto;
+	background:green;
+	width:100%;
 	text-align:center;
 	border-radius:20px;
 	padding:20px;
+	
 	
 }
 
@@ -317,6 +321,8 @@ color: #1877f2;} /* bleu Facebook */
 	.header{
 		flex-wrap:wrap;
 		text-align:center;
+		flex-direction:column;
+		
 	}
 	
 	.header a{
@@ -324,12 +330,16 @@ color: #1877f2;} /* bleu Facebook */
 		display:inline-block;
 		align-items:center;
 	}
-
+	
+	.connection{
+		display:inline;
+		align-items:center;
+		text-align:center;
+	}
 	.main{
 	align-items:center;
-	background:blue;
-	flex-direction:column;
-	text-align:center;
+	width:100%;
+	justify-content:center;
 	}
 	.carte{
 		align-items:center;
