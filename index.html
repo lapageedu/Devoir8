@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	
-	<body>	
+	<body>		
 	<header class="header">
 		<div class="zonenav">
 		<img class="logo" src="bible.jpg" alt="logo">
@@ -23,6 +23,11 @@
 			<a href="#">A Propos</a>	
 		</div>	
 	</header>
+	
+	<div class="connection">		
+		<button onclick="netlifyIdentity.open()">Se connecter</button>
+		<button onclick="netlifyIdentity.logout()">Se déconnecter</button>
+	</div>
 	
 	 <h1>Devoir de Jean Eddy Pagenel</h1>
 	<main class="main">
@@ -160,21 +165,32 @@
   </a>
 </div>
 
-<button onclick="netlifyIdentity.open()">Se connecter</button>
-<button onclick="netlifyIdentity.logout()">Se déconnecter</button>
 </footer>
 
 <script
-src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<!--  <script>
-  netlifyIdentity.on('login', user => {
+src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+</script>
+
+<script>
+  netlifyIdentity.on('init', user => {
+    if (user) {
+      document.getElementById('login').style.display = "none";
+      document.getElementById('logout').style.display = "block";
+    } else {
+      document.getElementById('login').style.display = "block";
+      document.getElementById('logout').style.display = "none";
+    }
+  });
+
+  netlifyIdentity.on('login', () => {
     window.location.href = "/private.html";
   });
 
   netlifyIdentity.on('logout', () => {
     window.location.href = "/";
   });
-</script> -->
+</script>
+
 
  </body>
 	</html>
